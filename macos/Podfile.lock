@@ -1,0 +1,68 @@
+PODS:
+  - ffmpeg-kit-macos-full (6.0)
+  - ffmpeg_kit_flutter_full (6.0.2):
+    - ffmpeg_kit_flutter_full/full (= 6.0.2)
+    - FlutterMacOS
+  - ffmpeg_kit_flutter_full/full (6.0.2):
+    - ffmpeg-kit-macos-full (= 6.0)
+    - FlutterMacOS
+  - FlutterMacOS (1.0.0)
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - fvp (0.0.1):
+    - Flutter
+    - FlutterMacOS
+    - mdk
+  - mdk (0.21.1.1)
+  - path_provider_foundation (0.0.1):
+    - Flutter
+    - FlutterMacOS
+  - sqflite (0.0.2):
+    - FlutterMacOS
+    - FMDB (>= 2.7.5)
+  - video_player_macos (0.0.1):
+    - FlutterMacOS
+
+DEPENDENCIES:
+  - ffmpeg_kit_flutter_full (from `Flutter/ephemeral/.symlinks/plugins/ffmpeg_kit_flutter_full/macos`)
+  - FlutterMacOS (from `Flutter/ephemeral`)
+  - fvp (from `Flutter/ephemeral/.symlinks/plugins/fvp/darwin`)
+  - path_provider_foundation (from `Flutter/ephemeral/.symlinks/plugins/path_provider_foundation/darwin`)
+  - sqflite (from `Flutter/ephemeral/.symlinks/plugins/sqflite/macos`)
+  - video_player_macos (from `Flutter/ephemeral/.symlinks/plugins/video_player_macos/macos`)
+
+SPEC REPOS:
+  trunk:
+    - ffmpeg-kit-macos-full
+    - FMDB
+    - mdk
+
+EXTERNAL SOURCES:
+  ffmpeg_kit_flutter_full:
+    :path: Flutter/ephemeral/.symlinks/plugins/ffmpeg_kit_flutter_full/macos
+  FlutterMacOS:
+    :path: Flutter/ephemeral
+  fvp:
+    :path: Flutter/ephemeral/.symlinks/plugins/fvp/darwin
+  path_provider_foundation:
+    :path: Flutter/ephemeral/.symlinks/plugins/path_provider_foundation/darwin
+  sqflite:
+    :path: Flutter/ephemeral/.symlinks/plugins/sqflite/macos
+  video_player_macos:
+    :path: Flutter/ephemeral/.symlinks/plugins/video_player_macos/macos
+
+SPEC CHECKSUMS:
+  ffmpeg-kit-macos-full: 89a5665b57ebbbb7e93f0e82417729f5387326e5
+  ffmpeg_kit_flutter_full: 241e12ea96e6a875b1e2f671f05ab9637e288910
+  FlutterMacOS: 8f6f14fa908a6fb3fba0cd85dbd81ec4b251fb24
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  fvp: cb4a2438331cfd98abcdcac3ae49d0b0456274a2
+  mdk: 868282c6d69c466118e962c0d3391951b23e5dc8
+  path_provider_foundation: 29f094ae23ebbca9d3d0cec13889cd9060c0e943
+  sqflite: a5789cceda41d54d23f31d6de539d65bb14100ea
+  video_player_macos: 7a50b407d775a45392851b1218a9cf4be395cf7f
+
+PODFILE CHECKSUM: 9ebaf0ce3d369aaa26a9ea0e159195ed94724cf3
+
+COCOAPODS: 1.12.1
