@@ -32,6 +32,7 @@ class _AppVideoPlayerState extends State<AppVideoPlayer> {
   Future<void> videoControllerInitialize() async {
     videoPlayerController = VideoPlayerController.file(videoUrl);
     await videoPlayerController.initialize();
+
     videoPlayerController.play();
     videoDuration = videoPlayerController.value.duration;
     videoPlayerController.addListener(_onVideoValueChange);
