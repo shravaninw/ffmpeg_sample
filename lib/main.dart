@@ -1,6 +1,7 @@
 import 'dart:io';
 import 'dart:math';
 
+import 'package:ffmpeg_kit_flutter_full/log.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:fvp/fvp.dart' as fvp;
@@ -183,7 +184,10 @@ class _MyHomePageState extends State<MyHomePage> {
       } else {
         print("ERROR");
         final String? v = await session.getFailStackTrace();
-        throw (Exception(v ?? 'ERROR'));
+        final List<Log> logs = await session.getLogs();
+        final error = logs.map((e) => e.getMessage()).join('\n\n');
+        await ffmpegLog(error);
+        throw (Exception(error ?? 'ERROR'));
       }
     });
     var end = DateTime.now();
